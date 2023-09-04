@@ -1,0 +1,41 @@
+.sottolineato{
+    text-decoration: overline;
+    text-decoration: underline;/*la regola che appare dopo, vince*/
+}
+
+#colore-blue{/* peso: 100*/
+    color: blue;
+}
+.colore-verde{/* peso: 10*/
+    color: green;
+}
+
+.colore-rosso{/* peso: 10*/
+    color: red;
+    /*Se entrambe le classi vengono assegnate allo stesso elemento, vince il blocco che appare per ultimo(dall'alto verso il basso)*/
+}
+
+/*
+selezione gerarchica
+*/
+
+section p{/*peso 1 + 1 = 2 */
+    background-color:red
+}
+section .corsivo{/*peso 1 + 10 = 11*/
+    font-style: italic;
+}
+
+/*aumentare la specificità*/
+
+p.corsivo{/*peso 1 + 10 = 11*/
+    font-size: 2rem !important;
+}
+.c1.c2{/*peso 10 + 10 = 20 */
+    /*ho selezionato un elemento che deve avere entrambe le classi: c1 e c2*/
+    transform: rotate(-5deg)
+}
+
+p.corsivo{/*peso 1 + 10 = 11*/
+    font-size: 3rem;
+}

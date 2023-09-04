@@ -1,0 +1,12 @@
+ /*
+        selettore{
+            regole/proprietà : valore;
+            regole/proprietà : valore;
+            regole/proprietà : valore;
+            regole/proprietà : valore;
+        }
+        */
+        div{
+            color: red;
+            background-color:blue;
+        }
