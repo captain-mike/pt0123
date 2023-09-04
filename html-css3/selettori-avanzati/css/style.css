@@ -1,0 +1,43 @@
+.item{
+    background-color: red;
+    border: none;
+    padding: 5px;
+    color: #fff;
+    transition: background-color 1s;
+    cursor: pointer;
+}
+
+.item:hover{/*se l'utente passa il mouse sugli elementi con la classe item*/
+    background-color:rgba(102, 10, 10, 0.522)
+}
+
+table{
+    width: 100%;
+}
+table td{
+    border: 1px solid #000;
+    text-align: center;
+}
+
+table td:first-child{
+    /*ogni primo elemento child nella tabella*/
+    background-color:red;
+}
+
+table tr:nth-of-type(odd){
+    /*tutte le tr dispari*/
+    background-color: grey;
+}
+
+.modificata::before{
+    content: '@';
+}
+.modificata::after{
+    content: '>>>';
+}
+
+
+table tr:nth-of-type(even) td:last-child::after{
+    /*seleziona tutte le tr pari, dentro ogniuna prendi l'ultima td ed attiva lo pseudoelemento after*/
+    content:'ultima cella di una riga pari'
+}
