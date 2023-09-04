@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+
+        <input type="text" required name="nome" placeholder="Inserisci il nome">
+        <input type="text" name="cognome" placeholder="Inserisci il cognome">
+        <input type="email" name="email" placeholder="Inserisci la tua E-Mail">
+        <input type="password" name="password" placeholder="Inserisci la tua password">
+
+        <input type="radio" name="sesso" value="m" id="m">
+        <label for="m">Maschio</label>
+        
+        <input type="radio" name="sesso" value="f" id="f">
+        <label for="f">Femmina</label>
+
+        <input type="radio" checked name="sesso" value="non-specificato" id="non-specificato">
+        <label for="non-specificato">Non specificato</label>
+        
+        <select name="city">
+            <option value="">--seleziona--</option>
+            <option value="1" selected>Roma</option>
+            <option value="2">Milano</option>
+            <option value="3">Napoli</option>
+        </select>
+        
+        <input type="checkbox" required>
+        <label for="non-specificato">Acconsento al <a href="#">trattamento</a> dei dati</label>
+
+        <button>Invia</button>
+        <!-- <input type="submit" value="Etichetta del bottone"> -->
+    </form>
+    
+</body>
+</html>
