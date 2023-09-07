@@ -1,0 +1,52 @@
+.container{
+    margin:0 auto;
+}
+.post{
+    min-height:300px;
+    background-color:red;
+    margin-bottom:10px
+}
+
+@media screen and (min-width:768px){
+
+    .post{
+        width: calc(100% / 2 - 2px);
+        background-color: yellow;
+        display: inline-block;
+    }
+    
+}
+
+@media screen and (min-width:1280px){
+
+    .container{
+        width: 1170px;
+    }
+    
+    .post{
+        background-color: green;
+        width: calc(100% / 3 - 3px);
+        display: inline-block;
+    }
+    
+}
+
+@media screen and (min-width:1440px){
+    
+    .container{
+        width: 1400px;
+    }
+
+    .post{
+        background-color: aqua;
+        width: calc(100% / 4 - 4px);
+        display: inline-block;
+    }
+
+}
+
+@media print {
+    .post{
+        background-color: grey;
+    }
+}

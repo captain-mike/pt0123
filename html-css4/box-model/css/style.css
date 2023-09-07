@@ -1,0 +1,89 @@
+.quadrato{
+    width: 100px;
+    height: 100px;
+    background-color:red;
+}
+
+.quadrato2{
+    width: 100px;
+    min-height: 100px;
+    background-color:red;
+}
+
+.quadrato3{
+    max-width: 900px;
+    height: 100px;
+    background-color:red;
+}
+
+/*padding*/
+
+#q4{
+    padding: 10px;
+    /*
+    altre modalità
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    padding: 0 20px; y = 0px / x = 20px
+    padding: 0 20px 0 20px; top = 0 / right = 20px / bottom = 0 / left = 20px
+    */
+    box-sizing: border-box;
+}
+/* 
+a volte si mette questo nelle pagine
+*{
+    box-sizing: border-box;
+} 
+*/
+
+/**
+border
+*/
+#q5{
+    border: 10px solid black;
+}
+#q6{
+    border: 10px dashed black;
+    border-bottom: none;
+}
+#q7{
+    border-top: 10px dashed black;
+    border-bottom: 10px solid black;
+    border-radius: 100%;
+    background-color:transparent
+}
+
+
+/**
+margin
+*/
+#q8{
+    margin: 100px;
+    /*
+    altre modalità
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+    margin: 0 20px; y = 0px / x = 20px
+    margin: 0 20px 0 20px; top = 0 / right = 20px / bottom = 0 / left = 20px
+    */
+}
+
+#q9{
+    margin: 0 auto;
+}
+
+#q10{
+    margin-left: -50px;
+}
+
+#q11{
+    background-color:red;
+    height: 50vh;
+    width: 50vw;
+}
